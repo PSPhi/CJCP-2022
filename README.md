@@ -13,5 +13,5 @@ The input files to compute:
 6.	ultrafast electron relaxation dynamics.
 
 ## [Rutile](./Rutile) 
-The input files for calculations of the same properties as the ones in Anatase TiO2.
+The input files for calculations of the same properties as the ones in Anatase TiO<sub>2</sub>.
 
