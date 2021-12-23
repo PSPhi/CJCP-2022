@@ -1,0 +1,29 @@
+&perturbo
+ prefix      = 'tio2'
+ calc_mode   = 'dynamics-run'
+
+ boltz_kdim(1) = 32 
+ boltz_kdim(2) = 32 
+ boltz_kdim(3) = 32
+
+ boltz_emin = 9.38
+ boltz_emax = 10.99
+ band_min = 1
+ band_max = 1
+ 
+ ftemper  = 'tio2.temper'
+
+ time_step   = 0.5 !fs
+ boltz_nstep = 400 
+ output_nstep = 2
+ solver = 'rk4'  
+
+ boltz_init_dist = 'gaussian' !We add the corresponding modifications to the code for single occupied initial state
+ boltz_init_e0 = 10.228 ! eV
+ boltz_init_smear = 15 !meV
+
+ tmp_dir = "./tmp"
+ phfreq_cutoff = 1 ! meV
+ delta_smear = 20 !meV
+! load_scatter_eph = .true.
+/

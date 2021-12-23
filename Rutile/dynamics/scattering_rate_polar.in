@@ -1,0 +1,18 @@
+&perturbo
+  prefix      = 'rutile'
+  calc_mode   = 'imsigma'
+  
+  fklist   = 'rutile_tet.kpt'
+  ftemper  = 'rutile.temper'
+  
+  band_min = 1
+  band_max = 6
+
+  phfreq_cutoff = 1 ! meV
+  delta_smear = 20 ! meV
+
+  polar_split='polar' 
+  sampling = 'cauchy'
+  nsamples = 1000000
+  cauchy_scale = 0.035
+ /

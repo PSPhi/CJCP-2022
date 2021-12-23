@@ -1,0 +1,13 @@
+Phonons on a uniform grid
+&inputph
+  prefix   = 'rutile',
+  fildyn   = 'rutile.dyn.xml',
+  ldisp    = .true.     
+  fildvscf = 'dvscf'
+  tr2_ph   =  1.0d-17,
+  lqdir = .true.
+  nq1=4, nq2=4, nq3=6,
+  epsil = .true.
+  outdir='./tmp'
+ /
+

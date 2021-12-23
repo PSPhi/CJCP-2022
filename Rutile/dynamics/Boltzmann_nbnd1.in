@@ -1,0 +1,29 @@
+&perturbo
+ prefix      = 'rutile'
+ calc_mode   = 'dynamics-run'
+
+ boltz_kdim(1) = 32
+ boltz_kdim(2) = 32 
+ boltz_kdim(3) = 32
+
+ boltz_emin = 10.39 
+ boltz_emax = 11.5
+ band_min = 1
+ band_max = 1
+ 
+ ftemper  = 'rutile.temper'
+
+ time_step   = 0.5 !fs
+ boltz_nstep = 400 
+ output_nstep = 2
+ solver = 'rk4'  
+
+ boltz_init_dist = 'gaussian'  ! We add the corresponding modifications to the code for single occupied initial state 
+ boltz_init_e0 = 7.4 ! eV
+ boltz_init_smear = 15 !meV
+
+ tmp_dir = "./tmp"
+ phfreq_cutoff = 1 ! meV
+ delta_smear = 20 !meV
+! load_scatter_eph = .true.
+/

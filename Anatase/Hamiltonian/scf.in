@@ -1,0 +1,44 @@
+anatase
+&CONTROL
+  calculation='scf',
+  restart_mode='from_scratch',
+  outdir='./tmp',
+  prefix='tio2',
+  forc_conv_thr=1.0d-5,
+  etot_conv_thr=1.0d-8,
+  pseudo_dir=/data/home/espresso/pseudo,
+  tstress = .true.
+/
+
+&SYSTEM
+  ibrav=7,
+  celldm(1) = 7.1535,
+  celldm(3) = 2.5145,
+  nat=6,
+  ntyp=2,
+  ecutwfc=200,
+  nbnd=34
+/
+
+&ELECTRONS
+  mixing_beta     = 0.7
+  conv_thr        = 1.0d-12
+  diagonalization = 'david'
+  diago_full_acc  = .true.
+/
+
+ATOMIC_SPECIES
+  O 15.999400d0 O.pbe.NC-cep.UPF
+  Ti 47.867000d0 Ti.IV.pbe-cep_ox.UPF 
+
+K_POINTS {automatic}
+  8 8 8 0 0 0
+
+ATOMIC_POSITIONS {alat}
+Ti       0.000000000   0.000000000   0.000000000
+Ti       0.000000000   0.500000000   0.628625000
+O        0.000000000   0.000000000   0.527413022
+O        0.000000000   0.500000000   1.156038022
+O        0.500000000   0.500000000   0.729836978
+O        0.000000000   0.500000000   0.101211978
+

@@ -1,0 +1,9 @@
+&inputpp
+  outdir='./tmp'
+  prefix = 'tio2'
+  seedname = 'tio2'
+  spin_component = 'none'
+  write_mmn = .true.
+  write_amn = .true.
+  write_unk = .false. 
+/

@@ -1,0 +1,18 @@
+&perturbo
+  prefix      = 'tio2'
+  calc_mode   = 'imsigma'
+  
+  fklist   = 'tio2_tet.kpt'
+  ftemper  = 'tio2.temper'
+  
+  band_min = 1
+  band_max = 6
+
+  phfreq_cutoff = 2 ! meV
+  delta_smear = 20 ! meV
+  
+  polar_split='polar'  
+  nsamples = 1000000
+  sampling = 'cauchy'
+  cauchy_scale = 0.035
+ /
